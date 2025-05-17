@@ -15,12 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_1201A32504C7440DAC8A721B43BEC25A"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_3AB7A70E998BF4568D1AE3BDE4604BA0"
         "OwnerKey" = "8:_A82E234D21DB441E8EDC222C45C5A935"
         "MsmSig" = "8:_UNDEFINED"
@@ -33,19 +27,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_608DADD753E1437C964D1FF132309383"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_75CD055C83EE4BA7B7D67195AC0DFA19"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_A82E234D21DB441E8EDC222C45C5A935"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CA520BD55CC241D284F99A2E4D227555"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -59,18 +47,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_A82E234D21DB441E8EDC222C45C5A935"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1201A32504C7440DAC8A721B43BEC25A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_75CD055C83EE4BA7B7D67195AC0DFA19"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -168,37 +144,6 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1201A32504C7440DAC8A721B43BEC25A"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Graphs, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_1201A32504C7440DAC8A721B43BEC25A"
-                    {
-                    "Name" = "8:Graphs.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\Release\\Graphs.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_40EC9CA9B601462BBB7C405E0BE4CFDC"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3AB7A70E998BF4568D1AE3BDE4604BA0"
             {
             "SourcePath" = "8:VCRUNTIME140.dll"
@@ -239,43 +184,12 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_608DADD753E1437C964D1FF132309383"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CA520BD55CC241D284F99A2E4D227555"
             {
-            "SourcePath" = "8:..\\..\\..\\..\\Desktop\\GraphIcon.ico"
-            "TargetName" = "8:GraphIcon.ico"
+            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\knowledge-graph.ico"
+            "TargetName" = "8:knowledge-graph.ico"
             "Tag" = "8:"
             "Folder" = "8:_7C1A0A3AB5194A0ABB118325E27ECBB6"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_75CD055C83EE4BA7B7D67195AC0DFA19"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Graphs, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_75CD055C83EE4BA7B7D67195AC0DFA19"
-                    {
-                    "Name" = "8:Graphs.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\Release\\Graphs.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_518F654526DF4741A08D6EFC14CF611C"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -366,15 +280,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Graphs"
-        "ProductCode" = "8:{0F2B7A0B-B522-491C-9C3A-670D314904F0}"
-        "PackageCode" = "8:{520D5CB3-1348-4ECE-9187-FC9601AD9EC4}"
+        "ProductCode" = "8:{6C78330E-39F1-4FF6-B858-A7AC720AE160}"
+        "PackageCode" = "8:{E4A9EAB6-AEA6-4A41-930C-599300903701}"
         "UpgradeCode" = "8:{4651C042-1EEE-4549-8408-D88ABE6A918B}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.1"
         "Manufacturer" = "8:Tigran's Company"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -487,6 +401,34 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_0F77256ECD8A49A082F17314D86C009E"
+            {
+            "Name" = "8:Graphs"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_A82E234D21DB441E8EDC222C45C5A935"
+            "Folder" = "8:_40EC9CA9B601462BBB7C405E0BE4CFDC"
+            "WorkingFolder" = "8:_7C1A0A3AB5194A0ABB118325E27ECBB6"
+            "Icon" = "8:_CA520BD55CC241D284F99A2E4D227555"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_880E138FCA9C457F905706E2F9DD7A4A"
+            {
+            "Name" = "8:Graphs"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_A82E234D21DB441E8EDC222C45C5A935"
+            "Folder" = "8:_518F654526DF4741A08D6EFC14CF611C"
+            "WorkingFolder" = "8:_7C1A0A3AB5194A0ABB118325E27ECBB6"
+            "Icon" = "8:_CA520BD55CC241D284F99A2E4D227555"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -506,7 +448,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_D91EF9EC98494DEAB9367EE892550F9E"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Ход выполнения"
+                    "DisplayName" = "8:Progress"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminProgressDlg.wid"
@@ -550,7 +492,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_546BDFFE98DC4984997CE4437F58250A"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Ход выполнения"
+                    "DisplayName" = "8:Progress"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
@@ -594,7 +536,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_AF4A8D14897C47AB859A8005AA8ABC62"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Добро пожаловать!"
+                    "DisplayName" = "8:Welcome"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
@@ -642,7 +584,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_CB35215A8ECC4EB981DF1901D2061F18"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Папка установки"
+                    "DisplayName" = "8:Installation Folder"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
@@ -677,7 +619,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_EB23F86DF4654F1B8EB9E4E49F9441C9"
                     {
                     "Sequence" = "3:300"
-                    "DisplayName" = "8:Подтверждение установки"
+                    "DisplayName" = "8:Confirm Installation"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
@@ -708,7 +650,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_6CEC1C55F2104D8F8171FF4ABF4DAD65"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Готово"
+                    "DisplayName" = "8:Finished"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
@@ -745,7 +687,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_39AB0CCA548144FC9B76FE2FAA70CED8"
                     {
                     "Sequence" = "3:300"
-                    "DisplayName" = "8:Подтверждение установки"
+                    "DisplayName" = "8:Confirm Installation"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminConfirmDlg.wid"
@@ -767,7 +709,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_A79F35B81A114BCFB216F0661620E462"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Добро пожаловать!"
+                    "DisplayName" = "8:Welcome"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminWelcomeDlg.wid"
@@ -815,7 +757,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_DDA5B076D18040F3BBEC9613B5AF1C9C"
                     {
                     "Sequence" = "3:200"
-                    "DisplayName" = "8:Папка установки"
+                    "DisplayName" = "8:Installation Folder"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
@@ -846,7 +788,7 @@
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_546BB03BD25D4E8E989526B62EDBB141"
                     {
                     "Sequence" = "3:100"
-                    "DisplayName" = "8:Готово"
+                    "DisplayName" = "8:Finished"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
                     "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"

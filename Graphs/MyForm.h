@@ -106,16 +106,16 @@ namespace Graphs {
 			this->label1->Location = System::Drawing::Point(20, 43);
 			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(313, 25);
+			this->label1->Size = System::Drawing::Size(503, 25);
 			this->label1->TabIndex = 1;
-			this->label1->Text = L"Enter the maximum number of tops";
+			this->label1->Text = L"Enter the maximum number of tops or the name of the file\r\n";
 			// 
 			// textBoxN
 			// 
-			this->textBoxN->Location = System::Drawing::Point(373, 44);
-			this->textBoxN->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBoxN->Location = System::Drawing::Point(534, 43);
+			this->textBoxN->Margin = System::Windows::Forms::Padding(4);
 			this->textBoxN->Name = L"textBoxN";
-			this->textBoxN->Size = System::Drawing::Size(52, 22);
+			this->textBoxN->Size = System::Drawing::Size(69, 22);
 			this->textBoxN->TabIndex = 2;
 			this->textBoxN->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &MyForm::textBoxN_KeyDown);
 			// 
@@ -127,7 +127,7 @@ namespace Graphs {
 			this->AdjacencyMatrix->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				50)));
 			this->AdjacencyMatrix->Location = System::Drawing::Point(20, 111);
-			this->AdjacencyMatrix->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->AdjacencyMatrix->Margin = System::Windows::Forms::Padding(4);
 			this->AdjacencyMatrix->Name = L"AdjacencyMatrix";
 			this->AdjacencyMatrix->RowCount = 1;
 			this->AdjacencyMatrix->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
@@ -138,10 +138,10 @@ namespace Graphs {
 			// submit_btn1
 			// 
 			this->submit_btn1->BackColor = System::Drawing::Color::ForestGreen;
-			this->submit_btn1->Location = System::Drawing::Point(433, 42);
-			this->submit_btn1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->submit_btn1->Location = System::Drawing::Point(611, 43);
+			this->submit_btn1->Margin = System::Windows::Forms::Padding(4);
 			this->submit_btn1->Name = L"submit_btn1";
-			this->submit_btn1->Size = System::Drawing::Size(37, 28);
+			this->submit_btn1->Size = System::Drawing::Size(74, 28);
 			this->submit_btn1->TabIndex = 0;
 			this->submit_btn1->Text = L"V";
 			this->submit_btn1->UseVisualStyleBackColor = false;
@@ -178,12 +178,12 @@ namespace Graphs {
 			// submit_btn2
 			// 
 			this->submit_btn2->AutoSize = true;
-			this->submit_btn2->Location = System::Drawing::Point(300, 71);
-			this->submit_btn2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->submit_btn2->Location = System::Drawing::Point(588, 75);
+			this->submit_btn2->Margin = System::Windows::Forms::Padding(4);
 			this->submit_btn2->Name = L"submit_btn2";
-			this->submit_btn2->Size = System::Drawing::Size(199, 30);
+			this->submit_btn2->Size = System::Drawing::Size(130, 30);
 			this->submit_btn2->TabIndex = 5;
-			this->submit_btn2->Text = L"Submit the adjacency matrix";
+			this->submit_btn2->Text = L"0";
 			this->submit_btn2->UseVisualStyleBackColor = true;
 			this->submit_btn2->Click += gcnew System::EventHandler(this, &MyForm::submit_btn2_Click);
 			this->submit_btn2->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &MyForm::submit_KeyDown);
@@ -210,7 +210,7 @@ namespace Graphs {
 			this->IterationsTable->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 				50)));
 			this->IterationsTable->Location = System::Drawing::Point(20, 201);
-			this->IterationsTable->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->IterationsTable->Margin = System::Windows::Forms::Padding(4);
 			this->IterationsTable->Name = L"IterationsTable";
 			this->IterationsTable->RowCount = 1;
 			this->IterationsTable->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
@@ -236,7 +236,7 @@ namespace Graphs {
 			this->GraphsForm->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->GraphsForm->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"GraphsForm.InitialImage")));
 			this->GraphsForm->Location = System::Drawing::Point(20, 295);
-			this->GraphsForm->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->GraphsForm->Margin = System::Windows::Forms::Padding(4);
 			this->GraphsForm->Name = L"GraphsForm";
 			this->GraphsForm->Size = System::Drawing::Size(666, 615);
 			this->GraphsForm->TabIndex = 9;
@@ -261,8 +261,8 @@ namespace Graphs {
 			this->SigmaTable->ColumnCount = 1;
 			this->SigmaTable->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent, 50)));
 			this->SigmaTable->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent, 50)));
-			this->SigmaTable->Location = System::Drawing::Point(507, 43);
-			this->SigmaTable->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->SigmaTable->Location = System::Drawing::Point(693, 43);
+			this->SigmaTable->Margin = System::Windows::Forms::Padding(4);
 			this->SigmaTable->Name = L"SigmaTable";
 			this->SigmaTable->RowCount = 1;
 			this->SigmaTable->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
@@ -277,7 +277,7 @@ namespace Graphs {
 			this->DefTable->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent, 50)));
 			this->DefTable->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent, 50)));
 			this->DefTable->Location = System::Drawing::Point(20, 111);
-			this->DefTable->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->DefTable->Margin = System::Windows::Forms::Padding(4);
 			this->DefTable->Name = L"DefTable";
 			this->DefTable->RowCount = 1;
 			this->DefTable->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
@@ -335,7 +335,7 @@ namespace Graphs {
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->MainMenuStrip = this->menuStrip1;
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"MyForm";
 			this->Text = L"Graphs";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
@@ -348,134 +348,53 @@ namespace Graphs {
 
 		}
 #pragma endregion
-		
-		private: int size;
 
-		private: array<Point>^ points;
+	private: int size;
 
-		private: array<Point>^ points_for_vectors;
+	private: array<Point>^ points;
 
-		private: void ClearData();
+	private: array<Point>^ points_for_vectors;
 
-//My form
+	private: void ClearData();
 
-		private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e);
+		   //My form
 
-		private: System::Void submit_btn1_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e);
 
-		private: System::Void submit_btn2_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void submit_btn1_Click(System::Object^ sender, System::EventArgs^ e);
 
-		private: System::Void theLongestPathAndInvestigationToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void submit_btn2_Click(System::Object^ sender, System::EventArgs^ e);
 
-		private: System::Void textBoxN_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e);
+	private: System::Void theLongestPathAndInvestigationToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 
-		private: System::Void submit_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e);
+	private: System::Void textBoxN_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e);
 
-		private: System::Void textBox_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e);
+	private: System::Void submit_KeyDown(System::Object^ sender, System::Windows::Forms::KeyEventArgs^ e);
 
-		private: System::Void theShortestPathToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void textBox_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e);
 
-//The longest path
+	private: System::Void theShortestPathToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 
-		private: bool CheckTableContents1();
+		   //The longest path
 
-	    private: void Matrix1(int** à, int** A);
-		
-		private: void SigmaMatrix(int iter_count, int** a, int** new_array);
+	private: bool CheckTableContents1();
 
-		private: void DrawGraph(int** array1);
+	private: void Matrix1(int** à, int** A);
 
-		private: void FindTheDefinitions(int** array1, int** new_array, int iter);
+	private: void SigmaMatrix(int iter_count, int** a, int** new_array);
 
-		private: void Iterations1(int iter_count, int** new_array);
+	private: void DrawGraph(int** array1);
 
-//the shortest path
+	private: void FindTheDefinitions(int** array1, int** new_array, int iter);
 
-		private: bool CheckTableContents2();
+	private: void Iterations1(int iter_count, int** new_array);
 
-		private: void Matrix2(int** à);
+		   //the shortest path
 
-		private: void Iterations2(int** a, int** result);
+	private: bool CheckTableContents2();
+
+	private: void Matrix2(int** à);
+
+	private: void Iterations2(int** a, int** result);
 	};
 }
-
-
-
-/*using System;
-using System.Diagnostics;
-using System.Net;
-using System.Reflection;
-using System.Windows.Forms;
-
-namespace MyApp
-{
-	public partial class MainForm : Form
-	{
-		private const string UpdateServerUrl = "http://your-update-server.com/updates/";
-
-		public MainForm()
-		{
-			InitializeComponent();
-		}
-
-		private void MainForm_Load(object sender, EventArgs e)
-		{
-			CheckForUpdates();
-		}
-
-		private void CheckForUpdates()
-		{
-			try
-			{
-				Version currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
-
-				using (WebClient client = new WebClient())
-				{
-					string updateInfo = client.DownloadString(UpdateServerUrl + "version.txt");
-					Version latestVersion = new Version(updateInfo);
-
-					if (latestVersion > currentVersion)
-					{
-						DialogResult result = MessageBox.Show("New version available. Do you want to update?",
-							"Update Available", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-
-						if (result == DialogResult.Yes)
-						{
-							DownloadUpdate();
-						}
-					}
-					else
-					{
-						MessageBox.Show("You have the latest version.", "No Updates", MessageBoxButtons.OK, MessageBoxIcon.Information);
-					}
-				}
-			}
-			catch (Exception ex)
-			{
-				MessageBox.Show("Error checking for updates: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-			}
-		}
-
-		private void DownloadUpdate()
-		{
-			try
-			{
-				using (WebClient client = new WebClient())
-				{
-					string updateFileUrl = UpdateServerUrl + "MyAppSetup.exe"; // Replace with actual setup file name
-					string tempFilePath = System.IO.Path.GetTempFileName();
-
-					client.DownloadFile(updateFileUrl, tempFilePath);
-
-					Process.Start(tempFilePath); // Launch the installer
-					Application.Exit(); // Exit the current version
-				}
-			}
-			catch (Exception ex)
-			{
-				MessageBox.Show("Error downloading update: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-			}
-		}
-	}
-}
-*/
