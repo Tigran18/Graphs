@@ -70,26 +70,116 @@ inline void MyForm::DrawGraph(int** array1) {
 	Graphics^ g = Graphics::FromImage(GraphsForm->Image);
 	g->Clear(SystemColors::ButtonHighlight);
 	Pen^ pen = gcnew Pen(Color::Green);
-	Brush^ brush = gcnew SolidBrush(Color::Yellow);
+	Brush^ inputBrush = gcnew SolidBrush(Color::Red);     
+	Brush^ outputBrush = gcnew SolidBrush(Color::Black);  
+	Brush^ defaultBrush = gcnew SolidBrush(Color::Yellow); 
 	Brush^ textBrush = gcnew SolidBrush(Color::Black);
-	int R = 200;
-	Point center(GraphsForm->Width / 2, GraphsForm->Height / 2);
+
+	array<bool>^ isInput = gcnew array<bool>(this->size + 1);
+	array<bool>^ isOutput = gcnew array<bool>(this->size + 1);
+	array<int>^ layers = gcnew array<int>(this->size + 1); 
+	array<int>^ layerCounts = gcnew array<int>(this->size + 1); 
+	array<int, 2>^ layerVertices = gcnew array<int, 2>(this->size + 1, this->size + 1);
+	int maxLayer = 0;
+
+	for (int i = 0; i < this->size + 1; i++) {
+		isInput[i] = true;
+		isOutput[i] = true;
+		layers[i] = -1;
+		layerCounts[i] = 0;
+	}
+	for (int i = 0; i < this->size; i++) {
+		for (int j = 0; j < this->size + 1; j++) {
+			if (array1[i][j] == 1) {
+				isInput[j] = false; 
+				isOutput[i] = false;
+			}
+		}
+	}
+	isOutput[this->size] = true;
+	array<int>^ distToOutput = gcnew array<int>(this->size + 1);
+	for (int i = 0; i < this->size + 1; i++) {
+		distToOutput[i] = Int32::MaxValue;
+	}
+	for (int i = 0; i < this->size + 1; i++) {
+		if (isOutput[i]) {
+			distToOutput[i] = 0; 
+			layers[i] = 0; 
+			layerVertices[0, layerCounts[0]++] = i;
+		}
+	}
+	bool changed = true;
+	while (changed) {
+		changed = false;
+		for (int i = 0; i < this->size; i++) {
+			for (int j = 0; j < this->size + 1; j++) {
+				if (array1[i][j] == 1 && distToOutput[j] != Int32::MaxValue) {
+					if (distToOutput[i] > distToOutput[j] + 1) {
+						distToOutput[i] = distToOutput[j] + 1;
+						changed = true;
+					}
+				}
+			}
+		}
+	}
+	for (int i = 0; i < this->size + 1; i++) {
+		if (distToOutput[i] != Int32::MaxValue) {
+			layers[i] = distToOutput[i];
+			layerVertices[distToOutput[i], layerCounts[distToOutput[i]]++] = i;
+			maxLayer = Math::Max(maxLayer, distToOutput[i]);
+		}
+		else {
+			layers[i] = maxLayer + 1; 
+			layerVertices[maxLayer + 1, layerCounts[maxLayer + 1]++] = i;
+			maxLayer = Math::Max(maxLayer, maxLayer + 1);
+		}
+	}
+	array<int>^ newLayers = gcnew array<int>(this->size + 1);
+	array<int>^ newLayerCounts = gcnew array<int>(this->size + 1);
+	array<int, 2>^ newLayerVertices = gcnew array<int, 2>(this->size + 1, this->size + 1);
+	for (int i = 0; i < this->size + 1; i++) {
+		newLayerCounts[i] = 0;
+	}
+	for (int i = 0; i < this->size + 1; i++) {
+		if (layers[i] != -1) {
+			newLayers[i] = maxLayer - layers[i];
+			newLayerVertices[newLayers[i], newLayerCounts[newLayers[i]]++] = i;
+		}
+	}
+	layers = newLayers;
+	layerCounts = newLayerCounts;
+	layerVertices = newLayerVertices;
+	int margin = 50;
+	int xSpacing = maxLayer > 0 ? (GraphsForm->Width - 2 * margin) / maxLayer : 0;
+	if (xSpacing > 100) xSpacing = 100;
+	int maxVerticesInLayer = 0;
+	for (int i = 0; i <= maxLayer; i++) {
+		maxVerticesInLayer = Math::Max(maxVerticesInLayer, layerCounts[i]);
+	}
+	int ySpacing = maxVerticesInLayer > 1 ? (GraphsForm->Height - 2 * margin) / (maxVerticesInLayer - 1) : 0;
+	if (ySpacing > 100) ySpacing = 100; 
+
 	points = gcnew array<Point>(this->size + 1);
-	for (int i = 0; i < size + 1; i++) {
-		double angle = 2 * Math::PI * i / (this->size + 1);
-		int x = center.X + (int)(R * Math::Cos(angle));
-		int y = center.Y + (int)(R * Math::Sin(angle));
-		points[i] = Point(x, y);
-		g->FillEllipse(brush, x - 10, y - 10, 20, 20);
-		g->DrawEllipse(pen, x - 10, y - 10, 20, 20);
-		g->DrawString((i + 1 < this->size + 1) ? (i + 1).ToString() : (0).ToString(), gcnew System::Drawing::Font("Microsoft Sans Serif", 12), textBrush, (float)x + 10, (float)y - 10);
+	for (int layer = 0; layer <= maxLayer; layer++) {
+		int x = margin + layer * xSpacing;
+		for (int k = 0; k < layerCounts[layer]; k++) {
+			int i = layerVertices[layer, k];
+			int y = margin + k * ySpacing;
+			if (layerCounts[layer] == 1) y = GraphsForm->Height / 2;
+			points[i] = Point(x, y);
+			Brush^ vertexBrush = isOutput[i] ? outputBrush : (isInput[i] ? inputBrush : defaultBrush);
+			g->FillEllipse(vertexBrush, x - 10, y - 10, 20, 20);
+			g->DrawEllipse(pen, x - 10, y - 10, 20, 20);
+			g->DrawString((i + 1 < this->size + 1) ? (i + 1).ToString() : (0).ToString(),
+				gcnew System::Drawing::Font("Microsoft Sans Serif", 12), textBrush, (float)x + 10, (float)y - 10);
+		}
 	}
 	for (int i = 0; i < this->size; i++) {
 		for (int j = 0; j < this->size + 1; j++) {
 			if (array1[i][j] == 1) {
 				points_for_vectors = gcnew array<Point>(2);
 				g->DrawLine(pen, points[i], points[j]);
-				double angle = Math::Atan2(points[j].Y - points[i].Y, points[j].X - points[i].X);
+				double angle = Math::Atan2(points[j].Y - points[i].Y, points[j].X - points[j].X);
 				int arrowLength = 20;
 				double arrowAngle = Math::PI / 6;
 				int x1 = points[j].X - (int)(arrowLength * Math::Cos(angle + arrowAngle));

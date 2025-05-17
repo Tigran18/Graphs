@@ -27,13 +27,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_A82E234D21DB441E8EDC222C45C5A935"
+        "MsmKey" = "8:_66F4BF7064B84897BE6971B1DF5C678C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_CA520BD55CC241D284F99A2E4D227555"
+        "MsmKey" = "8:_A82E234D21DB441E8EDC222C45C5A935"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -184,9 +184,9 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CA520BD55CC241D284F99A2E4D227555"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_66F4BF7064B84897BE6971B1DF5C678C"
             {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\knowledge-graph.ico"
+            "SourcePath" = "8:..\\Resources\\knowledge-graph.ico"
             "TargetName" = "8:knowledge-graph.ico"
             "Tag" = "8:"
             "Folder" = "8:_7C1A0A3AB5194A0ABB118325E27ECBB6"
@@ -412,7 +412,7 @@
             "Target" = "8:_A82E234D21DB441E8EDC222C45C5A935"
             "Folder" = "8:_40EC9CA9B601462BBB7C405E0BE4CFDC"
             "WorkingFolder" = "8:_7C1A0A3AB5194A0ABB118325E27ECBB6"
-            "Icon" = "8:_CA520BD55CC241D284F99A2E4D227555"
+            "Icon" = "8:_66F4BF7064B84897BE6971B1DF5C678C"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_880E138FCA9C457F905706E2F9DD7A4A"
@@ -426,7 +426,7 @@
             "Target" = "8:_A82E234D21DB441E8EDC222C45C5A935"
             "Folder" = "8:_518F654526DF4741A08D6EFC14CF611C"
             "WorkingFolder" = "8:_7C1A0A3AB5194A0ABB118325E27ECBB6"
-            "Icon" = "8:_CA520BD55CC241D284F99A2E4D227555"
+            "Icon" = "8:_66F4BF7064B84897BE6971B1DF5C678C"
             "Feature" = "8:"
             }
         }

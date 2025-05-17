@@ -145,7 +145,7 @@
     <ResourceCompile Include="Graphs.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\Downloads\knowledge-graph.ico" />
+    <Image Include="..\Resources\knowledge-graph.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

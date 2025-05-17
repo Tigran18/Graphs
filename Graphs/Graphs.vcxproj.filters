@@ -42,7 +42,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\Downloads\knowledge-graph.ico">
+    <Image Include="..\Resources\knowledge-graph.ico">
       <Filter>Файлы ресурсов</Filter>
     </Image>
   </ItemGroup>
