@@ -157,21 +157,21 @@ namespace Graphs {
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(1794, 28);
+			this->menuStrip1->Size = System::Drawing::Size(1794, 30);
 			this->menuStrip1->TabIndex = 4;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
 			// theLongestPathAndInvestigationToolStripMenuItem
 			// 
 			this->theLongestPathAndInvestigationToolStripMenuItem->Name = L"theLongestPathAndInvestigationToolStripMenuItem";
-			this->theLongestPathAndInvestigationToolStripMenuItem->Size = System::Drawing::Size(252, 24);
+			this->theLongestPathAndInvestigationToolStripMenuItem->Size = System::Drawing::Size(252, 26);
 			this->theLongestPathAndInvestigationToolStripMenuItem->Text = L"The longest path and investigation";
 			this->theLongestPathAndInvestigationToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::theLongestPathAndInvestigationToolStripMenuItem_Click);
 			// 
 			// theShortestPathToolStripMenuItem
 			// 
 			this->theShortestPathToolStripMenuItem->Name = L"theShortestPathToolStripMenuItem";
-			this->theShortestPathToolStripMenuItem->Size = System::Drawing::Size(137, 24);
+			this->theShortestPathToolStripMenuItem->Size = System::Drawing::Size(137, 26);
 			this->theShortestPathToolStripMenuItem->Text = L"The shortest path";
 			this->theShortestPathToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::theShortestPathToolStripMenuItem_Click);
 			// 
@@ -337,7 +337,7 @@ namespace Graphs {
 			this->MainMenuStrip = this->menuStrip1;
 			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"MyForm";
-			this->Text = L"Graphs";
+			this->Text = L"Graphs Explroation";
 			this->WindowState = System::Windows::Forms::FormWindowState::Maximized;
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->menuStrip1->ResumeLayout(false);
